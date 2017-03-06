@@ -4,9 +4,9 @@ O estoque consiste em produtos
 
 O produto tem que ter nome, descrição, data da compra, valor da compra, valor de venda ( valor de compra + lucro) e data da ultima venda
 
-O caixa possui acesso ao estoque, pode adicionar mais de um produto e somar o valor total de produtos e adicionar a data da ultima venda
-
 Existem dois tipos de funcionários, vendedor e gerente.
+
+O vendedor só consegue interagir com o estoque através de uma venda, conseguindo somente dar baixa no produto.
 
 Somente o gerente pode adicionar e retirar produtos diretamente do estoque.
 
