@@ -10,8 +10,8 @@ The product "has to have":
   -Type;
   -Date of purchase (date_purch);
   -Price of purchase (price_purch);
-  -Price of sale (price_sale) //price_purch + % of profit
-  -Date of last sale(record);
+  -Price of sale (price_sale); //price_purch + % of profit
+  -Date of last sale(date_sale); //record
 O produto tem que ter:
   -Nome;
   -Descrição;
