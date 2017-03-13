@@ -1,11 +1,38 @@
+The system must have a stock/inventory/storage
 O sistema deve possuir um estoque.
 
+
+The stock has products
 O estoque consiste em produtos
 
-O produto tem que ter nome, descrição, data da compra, valor da compra, valor de venda ( valor de compra + lucro) e data da ultima venda
 
-Existem dois tipos de funcionários, vendedor e gerente.
+the product "has to have":
+  -Name;
+  -Description;
+  -Type;
+  -Date of purchase (date_purch);
+  -Price of purchase (price_purch);
+  -Price of sale (price_purch + % of profit)
+  -Date of last sale(record);
+O produto tem que ter:
+  -Nome;
+  -Descrição;
+  -Tipo;
+  -Data da compra;
+  -Valor da compra;
+  -Valor de venda ( valor de compra + lucro); 
+  -Data da ultima venda;
+  
 
+There is two types of employees:
+  -Salesman;
+  -Manager;
+Existem dois tipos de funcionários:
+  -Vendedor;
+  -Gerente;
+
+
+The salesman can only interect to th stock true some sale, making only  
 O vendedor só consegue interagir com o estoque através de uma venda, conseguindo somente dar baixa no produto.
 
 Somente o gerente pode adicionar e retirar produtos diretamente do estoque.
