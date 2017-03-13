@@ -32,9 +32,9 @@ Existem dois tipos de funcionários:
   -Gerente;
 
 
-The salesman can only interect to th stock true some sale, making only  
-O vendedor só consegue interagir com o estoque através de uma venda, conseguindo somente dar baixa no produto.
+The salesman can only interect with stock Through some sale or using the sales system, doing just product amount ajustment.  
+O vendedor só consegue interagir com o estoque através de uma venda ou usando sistema de vendas, conseguindo somente dar baixa no produto.
 
+
+Only the manage can add or remove product directly from stock
 Somente o gerente pode adicionar e retirar produtos diretamente do estoque.
-
-O vendedor só pode dar baixa ao estoque através do sistema de vendas
