@@ -1,12 +1,10 @@
 The system must have a stock/inventory/storage
 O sistema deve possuir um estoque.
 
-
 The stock has products
 O estoque consiste em produtos
 
-
-the product "has to have":
+The product "has to have":
   -Name;
   -Description;
   -Type;
@@ -23,7 +21,6 @@ O produto tem que ter:
   -Valor de venda ( valor de compra + lucro); 
   -Data da ultima venda;
   
-
 There is two types of employees:
   -Salesman;
   -Manager;
@@ -31,10 +28,8 @@ Existem dois tipos de funcionários:
   -Vendedor;
   -Gerente;
 
-
 The salesman can only interect with stock Through some sale or using the sales system, doing just product amount ajustment.  
 O vendedor só consegue interagir com o estoque através de uma venda ou usando sistema de vendas, conseguindo somente dar baixa no produto.
-
 
 Only the manage can add or remove product directly from stock
 Somente o gerente pode adicionar e retirar produtos diretamente do estoque.
