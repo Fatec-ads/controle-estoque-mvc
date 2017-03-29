@@ -12,4 +12,10 @@ import java.util.Calendar;
 public class Product {
     private static Calendar lastSellDate;
     private String name;
+    private String description;
+    private String type;
+    private Double profit;
+    private Calendar purchaseDate = Calendar.getInstance();
+    private Double purchasePrice;
+    private Double sellPrice = (this.purchasePrice * (this.profit/100)) + this.purchasePrice;
 }
