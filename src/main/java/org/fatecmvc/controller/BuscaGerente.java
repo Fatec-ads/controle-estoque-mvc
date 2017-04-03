@@ -1,13 +1,13 @@
 package org.fatecmvc.controller;
 
 import org.fatecmvc.model.Subject;
-import org.fatecmvc.view.View;
+import org.fatecmvc.view.ViewBusca;
 
 public class BuscaGerente implements Busca {
-	private View view;
+	private ViewBusca view;
 	private Subject model;
 	
-	public void buscaGerente(View o, Subject s){
+	public void buscaGerente(ViewBusca o, Subject s){
 		view = o;
 		model = s;
 	}
