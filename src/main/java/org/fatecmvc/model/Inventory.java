@@ -5,9 +5,6 @@ import org.fatecmvc.view.Observer;
 import java.util.LinkedList;
 import java.util.List;
 
-/**
- * Created by mdsli on 28/03/2017.
- */
 public class Inventory implements Subject{
     private List<Product> productList;
     private List<Observer> observerList;

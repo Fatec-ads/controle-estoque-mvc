@@ -3,7 +3,7 @@ package org.fatecmvc.controller;
 import org.fatecmvc.model.Subject;
 import org.fatecmvc.view.ViewBusca;
 
-public class BuscaVendedor implements Busca {
+public class Vendedor implements Employee {
 	private ViewBusca view;
 	private Subject model;
 
@@ -12,9 +12,19 @@ public class BuscaVendedor implements Busca {
 		model = s;
 	}
 
-	public void buscar() {
+	public void search() {
 		view.displayInventory();
 
+	}
+
+	public void add() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void delete() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
