@@ -7,9 +7,14 @@ public class Gerente implements Employee {
 	private View view;
 	private Subject model;
 	
-	public Gerente(View v, Subject s){
-		view = v;
-		model = s;
+	/**
+	 * 
+	 * @param view
+	 * @param subject
+	 */
+	public Gerente(View view, Subject subject){
+		this.view = view;
+		this.model = subject;
 	}
 
 	public void search() {

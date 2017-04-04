@@ -16,21 +16,34 @@ public class View implements Observer {
 		lista = new LinkedList<Product>();
 	}
 
-	public void setBusca(Employee p) {
+	/**
+	 * 
+	 * @param p
+	 */
+	public void setEmpregado(Employee p) {
 		empregado = p;
 	}
 
+	/**
+	 * @param Lista
+	 */
 	public void updateSearch(List<Product> l) {
 		lista = l;
 		empregado.search();
 	}
 
+	/**
+	 * @param Lista
+	 */
 	public void updateAdd(List<Product> l) {
 		lista = l;
 		empregado.add();
 
 	}
 
+	/**
+	 * @param Lista
+	 */
 	public void updateDelete(List<Product> l) {
 		lista = l;
 		empregado.delete();
@@ -41,11 +54,12 @@ public class View implements Observer {
 		if (!lista.isEmpty()) {
 			for (Product i : lista) {
 				Product produto = i;
-				System.out.println("=====VIEW GERENTE=====");
+				System.out.println("================================================");
 				System.out.println("Produto: " + produto.getName());
 				System.out.println("Quantidade " + produto.getQuantity());
 				System.out.println("Valor de Compra: " + produto.getPurchasePrice());
 				System.out.println(("Valor de Venda: " + produto.getSellPrice()));
+				System.out.println("================================================");
 			}
 		} else {
 			System.out.println("Não foi encontrado nenhum produto!");
