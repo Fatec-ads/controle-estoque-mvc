@@ -1,30 +1,29 @@
 package org.fatecmvc.controller;
 
 import org.fatecmvc.model.Subject;
-import org.fatecmvc.view.ViewBusca;
+import org.fatecmvc.view.View;
 
 public class Gerente implements Employee {
-	private ViewBusca viewBusca;
-	public ViewAdd viewAdd;
+	private View view;
 	private Subject model;
 	
-	public void buscaGerente(ViewBusca vb, Subject s){
-		viewBusca = vb;
+	public Gerente(View v, Subject s){
+		view = v;
 		model = s;
 	}
 
 	public void search() {
-		viewBusca.displayInventory();
+		view.displayInventory();
 
 	}
 
 	public void add() {
-		// TODO Auto-generated method stub
+		view.addProduct();
 		
 	}
 
 	public void delete() {
-		// TODO Auto-generated method stub
+		view.deleteProduct();
 		
 	}
 

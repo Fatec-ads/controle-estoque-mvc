@@ -1,13 +1,13 @@
 package org.fatecmvc.controller;
 
 import org.fatecmvc.model.Subject;
-import org.fatecmvc.view.ViewBusca;
+import org.fatecmvc.view.View;
 
 public class Vendedor implements Employee {
-	private ViewBusca view;
+	private View view;
 	private Subject model;
 
-	public void buscaVendedor(ViewBusca o, Subject s){
+	public Vendedor(View o, Subject s){
 		view = o;
 		model = s;
 	}
@@ -18,12 +18,12 @@ public class Vendedor implements Employee {
 	}
 
 	public void add() {
-		// TODO Auto-generated method stub
+		view.addProductVendor();
 		
 	}
 
 	public void delete() {
-		// TODO Auto-generated method stub
+		view.deleteProductVendor();
 		
 	}
 
