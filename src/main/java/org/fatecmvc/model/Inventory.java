@@ -22,7 +22,7 @@ public class Inventory implements Subject{
     public void notifyObservers(List<Product> encontrados) {
         for (Observer i: observerList){
             Observer ob = i;
-            ob.update(encontrados);
+            ob.updateSearch(encontrados);
         }
 
     }
