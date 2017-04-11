@@ -23,6 +23,9 @@ public class View implements Observer {
 	public void setEmpregado(Employee p) {
 		empregado = p;
 	}
+        public Employee getEmpregado(){
+            return empregado;
+        }
 
 	/**
 	 * @param Lista

@@ -19,6 +19,7 @@ public class Product {
     private Calendar purchaseDate;
     private Double purchasePrice;
     private Double sellPrice;
+
     
     /**
      * 

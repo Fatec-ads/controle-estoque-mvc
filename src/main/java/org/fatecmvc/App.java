@@ -17,18 +17,18 @@ public class App {
 		Inventory i = new Inventory();
 		initializeInventory(i);
 		View v = new View();
-		Integer opcao = 9;
+		Integer opcao;
 		Scanner leitor = new Scanner(System.in);
-		
-		while (opcao != 0) {
-			System.out.println("=============Sistema de Estoque=============");
+                
+                System.out.println("=============Sistema de Estoque=============");
 			System.out.println("Escolha a sua opção");
 			System.out.println("1 - Entrar como Gerente");
 			System.out.println("2 - Entrar como Vendedor");
 			System.out.println("0 - Sair");
 			opcao = leitor.nextInt();
-			if(opcao.equals(1)){
-				Gerente gerente = new Gerente(v, i);
+		switch(opcao){
+                    case 1:
+                        Gerente gerente = new Gerente(v, i);
 				v.setEmpregado(gerente);
 				i.registerObserver(v);
 				System.out.println("O que gostaria de fazer?");
@@ -36,19 +36,15 @@ public class App {
 				System.out.println("2 - Buscar produto");
 				System.out.println("3 - Deletar produto");
 				System.out.println("0 - Sair");
-				opcao = leitor.nextInt();
-				if(opcao.equals(1)){
-					gerente.add();
-				}
-				else if(opcao.equals(2)){
-					gerente.search();;
-				}
-				else if(opcao.equals(3)){
-					gerente.delete();
-				}
-			}
-			else if(opcao.equals(2)){
-				Vendedor vendedor = new Vendedor(v, i);
+                                opcao = leitor.nextInt();
+                        switch(opcao){
+                            case 1:gerente.add();break;
+                            case 2:gerente.search();break;
+                            case 3:gerente.delete();break;                              
+                        }
+                        break;
+                    case 2:
+                        Vendedor vendedor = new Vendedor(v, i);
 				v.setEmpregado(vendedor);
 				i.registerObserver(v);
 				System.out.println("O que gostaria de fazer?");
@@ -56,19 +52,15 @@ public class App {
 				System.out.println("2 - Buscar produto");
 				System.out.println("3 - Deletar produto");
 				System.out.println("0 - Sair");
-				opcao = leitor.nextInt();
-				if(opcao.equals(1)){
-					vendedor.add();
-				}
-				else if(opcao.equals(2)){
-					vendedor.search();
-				}
-				else if(opcao.equals(3)){
-					vendedor.delete();
-				}
-			}
-			
-		}
+                                opcao = leitor.nextInt();
+                        switch(opcao){
+                            case 1:vendedor.add();break;
+                            case 2:vendedor.search();break;
+                            case 3:vendedor.delete();break;
+                        }
+                        break;
+                    default: break;
+                }
 		
 
 	}
